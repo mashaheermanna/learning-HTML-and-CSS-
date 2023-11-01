@@ -15,28 +15,29 @@
         <nav>
           <a href="Blog.html">Blog</a>
           <a href="#" >Challenges</a>
-          <a href="#"  >Flexbox</a>
-          <a href="#" >CSS Grid</a>
+          <a href="flexbox.html"  >Flexbox</a>
+          <a href="css-grid.html" >CSS Grid</a>
         </nav>
         <!-- <div class="clear"></div> -->
 
       </header>
     
-
+      <div class="row">
       <article>
         <header class="post-header">
           <h2>The Basic Language of the Web: HTML</h2>
-
-          <img src="img/laura-jones.jpg" 
-            alt="the author's picture" 
-            width="50" 
-            height="50"
-            class="Author-img" 
-          />
-
-          <p id="author">
-            Posted by <strong>Laura Jones </strong>on Monday, June 21st 2027
-          </p>
+          <div class="author">
+            <img src="img/laura-jones.jpg" 
+              alt="the author's picture" 
+              width="50" 
+              height="50"
+              class="Author-img" 
+            />
+            
+            <p id="author-name">
+              Posted by <strong>Laura Jones </strong>on Monday, June 21st 2027
+            </p>
+          </div>
 
           <img 
             src="img/post-img.jpg" 
@@ -128,24 +129,31 @@
         <h4>Related posts</h4>
         
         <ul class="related">
-          <li>
+          <li class="related-post">
             <img src="img/related-1.jpg" width="75" height="75"/>
-            <a href="#" alt=" how to learn web development" width="50" height="50"> how to learn web development</a>
-            <p  class="related-author">By Jonas Schmedtmann</p>
-          </li>
-          <li>
+            <div>
+              <a href="#" class="related-link" alt=" how to learn web development" width="50" height="50"> how to learn web development</a>
+              <p  class="related-author">By Jonas Schmedtmann</p>
+            </div>
+            </li>
+          <li class="related-post">
             <img src="img/related-2.jpg" width="75" height="75"/>
-            <a href="#" alt="the unknown power of CSS"> the unknown power of CSS</a>
-            <p class="related-author">By Jim Dillon</p>
+            <div>
+
+              <a href="#" class="related-link" alt="the unknown power of CSS"> the unknown power of CSS</a>
+              <p class="related-author">By Jim Dillon</p>
+            </div>
           </li>
-          <li>
+          <li class="related-post">
             <img src="img/related-3.jpg" width="75" height="75"/>
-            <a href="#" alt="why JavaScript is Awasome"> why JavaScript is Awasome</a>
-            <p class="related-author">Matilda</p>
+            <div>
+              <a href="#" class="related-link" alt="why JavaScript is Awasome"> why JavaScript is Awasome</a>
+              <p class="related-author">Matilda</p>
+            </div>
           </li>
         </ul>
-      </aside>
-
+        </aside>
+      </div>
       <footer>
         <p id="Copyright" class="copyRight text">
           CopyRight &copy; 2027 by The Code Magazine.
